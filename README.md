@@ -18,6 +18,15 @@ The code is organized into the following sections:
 6. setup() Function: Describes the setup function that initializes the sketch.
 7. loop() Function: Explains the main loop function that continuously scans for QR codes and performs actions based on the decoded data.
 
+
+## Importing Required Files
+
+To import the required files, follow these steps:
+
+1. Visit the [ESP32QRCodeReader GitHub repository](https://github.com/alvarowolfx/ESP32QRCodeReader/tree/master/include).
+2. Download the `ESP32QRCodeReader.h` and `ESP32CameraPins.h` files from the repository.
+3. Place the downloaded files in your Arduino project folder or in the appropriate include directory of your development environment.
+
 ## Usage
 
 To use this code, follow these steps:
