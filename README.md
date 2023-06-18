@@ -14,9 +14,10 @@ The code is organized into the following sections:
 2. Constant Definitions: Defines the constant values used in the code, including Wi-Fi credentials and server URLs.
 3. QRCodeData Structure and Variables: Describes the structure and variables used for storing QR code data.
 4. connectWifi() Function: Explains the function for establishing a Wi-Fi connection.
-5. callWebhook() Function: Details the function for interacting with the server.
-6. setup() Function: Describes the setup function that initializes the sketch.
-7. loop() Function: Explains the main loop function that continuously scans for QR codes and performs actions based on the decoded data.
+5. callWebhook() Function: Passing the reservation number as a string parameter. An HTTP GET request is made to the CHECK_STATUS URL with the reservation number as a query parameter.
+6. If the statut is "true", indicating that the reservation exists, the code prints "OK" and proceeds to send another HTTP GET request to the CHANGE_STATUS URL with the reservation number.
+7. setup() Function: Describes the setup function that initializes the sketch.
+8. loop() Function: Explains the main loop function that continuously scans for QR codes and performs actions based on the decoded data.
 
 
 ## Importing Required Files
